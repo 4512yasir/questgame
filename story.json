@@ -1,0 +1,89 @@
+{
+    "intro": {
+      "text": "💻 Welcome to the Grand Hackathon! You're a young programmer on a mission to fix bugs, build features, and deploy your app. Are you ready to begin?",
+      "choices": [
+        { "text": "Begin Adventure", "next": "challenge1" },
+        { "text": "Read Hackathon Rules", "next": "rules" }
+      ]
+    },
+  
+    "rules": {
+      "text": "📜 Rules: 1) Fix bugs. 2) Make smart choices. 3) Don’t run out of energy. 4) Earn points. 5) Reach the finale with success. Now go!",
+      "choices": [
+        { "text": "Start Your Journey", "next": "challenge1" }
+      ]
+    },
+  
+    "challenge1": {
+      "text": "🪲 First bug! Your code throws an error: 'undefined is not a function'. What do you do?",
+      "choices": [
+        { "text": "Use console.log to debug", "next": "challenge2", "points": 10 },
+        { "text": "Google the error", "next": "challenge2", "points": 15 },
+        { "text": "Ignore it and move on", "next": "gameover1", "points": -10 }
+      ]
+    },
+  
+    "challenge2": {
+      "text": "🧩 You solved the error. Now your teammate pushes code that breaks your layout. What do you do?",
+      "choices": [
+        { "text": "Start a merge conflict battle", "next": "challenge3", "points": 5 },
+        { "text": "Talk to the teammate and resolve it calmly", "next": "challenge3", "points": 15 },
+        { "text": "Overwrite their code with yours", "next": "gameover2", "points": -15 }
+      ]
+    },
+  
+    "challenge3": {
+      "text": "🔐 You reach the login page task. What's your approach?",
+      "choices": [
+        { "text": "Use plain HTML/CSS", "next": "challenge4a", "points": 10 },
+        { "text": "Use a CSS framework for speed", "next": "challenge4b", "points": 15 }
+      ]
+    },
+  
+    "challenge4a": {
+      "text": "🧪 Looks neat, but the client wants animations. What now?",
+      "choices": [
+        { "text": "Add CSS transitions manually", "next": "final1", "points": 10 },
+        { "text": "Ignore the request", "next": "gameover3", "points": -20 }
+      ]
+    },
+  
+    "challenge4b": {
+      "text": "🌟 Fast and beautiful! Now your timer function is buggy. Choose a fix:",
+      "choices": [
+        { "text": "Rewrite the timer logic from scratch", "next": "final2", "points": 20 },
+        { "text": "Comment out the timer temporarily", "next": "gameover4", "points": -10 }
+      ]
+    },
+  
+    "final1": {
+      "text": "🎉 You fixed all bugs and impressed the judges with smooth CSS animations!",
+      "choices": []
+    },
+  
+    "final2": {
+      "text": "🏆 You rewrote the timer, and the app now works flawlessly. You won the Hackathon!",
+      "choices": []
+    },
+  
+    "gameover1": {
+      "text": "💥 Ignoring the error led to a crash in front of the judges. Game Over.",
+      "choices": []
+    },
+  
+    "gameover2": {
+      "text": "⚠️ Overwriting teammate’s code caused a team breakdown. Disqualified.",
+      "choices": []
+    },
+  
+    "gameover3": {
+      "text": "📉 Judges were not impressed with your barebones interface. Game Over.",
+      "choices": []
+    },
+  
+    "gameover4": {
+      "text": "⏱️ Timer never worked again. The app was incomplete. Game Over.",
+      "choices": []
+    }
+  }
+  
